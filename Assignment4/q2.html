@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Event Registration</title>
+</head>
+<body>
+    <h2>Event Registration Form</h2>
+    <form action="/submit_form" method="post">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+        <label for="age-group">Age Group:</label>
+        <select id="age-group" name="age-group" required>
+            <option value="under-18">Below 18</option>
+            <option value="18-35">18-35</option>
+            <option value="36-60">36-60</option>
+            <option value="60+">60+</option>
+        </select><br><br>
+        <label>Topics of Interest:</label>
+        <input type="checkbox" id="tech" name="topics" value="Tech">
+        <label for="tech">Technology</label>
+        <input type="checkbox" id="fitness" name="topics" value="Fitness">
+        <label for="fitness">Fitness</label>
+        <input type="checkbox" id="education" name="topics" value="Education">
+        <label for="education">Education</label>
+        <input type="checkbox" id="literature" name="topics" value="Literature">
+        <label for="literature">Literature</label><br><br>
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
