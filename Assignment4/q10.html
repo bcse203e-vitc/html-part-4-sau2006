@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Template</title>
+</head>
+<body>
+    <h1>Create your custom form</h1>
+    <form action="form_submission.html" method="GET">
+        <label for="formname">Form Name:</label>
+        <input type="text" id="formname" name="formname" required><br><br>
+        <label for="numfields">Number of Input Fields:</label>
+        <input type="number" id="numfields" name="numfields" min="1" required><br><br>
+        <h3>Define fields</h3>
+        <div id="fields-container">
+            <label for="field1type">Field 1 type:</label>
+            <select id="field1type" name="field1type">
+                <option value="text">Text</option>
+                <option value="email">Email</option>
+                <option value="number">Number</option>
+                <option value="date">Date</option>
+            </select>
+            <label for="field1label">Field 1 label:</label>
+            <input type="text" id="field1label" name="field1label" required><br><br>
+        </div>
+        <h3>Submit your custom form</h3>
+        <button type="submit">Create form</button>
+    </form>
+</body>
+</html>
