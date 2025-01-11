@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Submission Form</title>
+</head>
+<body>
+    <h1>Online Quiz Submission</h1>
+    <form action="#" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <h3>1. What is the capital city of France?</h3>
+        <input type="radio" id="q1_a" name="q1" value="Paris">
+        <label for="q1_a">Paris</label><br>
+        <input type="radio" id="q1_b" name="q1" value="London">
+        <label for="q1_b">London</label><br>
+        <input type="radio" id="q1_c" name="q1" value="Berlin">
+        <label for="q1_c">Berlin</label><br><br>
+        <h3>2. Which language is most commonly used for building websites?</h3>
+        <input type="radio" id="q2_a" name="q2" value="Java">
+        <label for="q2_a">Java</label><br>
+        <input type="radio" id="q2_b" name="q2" value="Python">
+        <label for="q2_b">Python</label><br>
+        <input type="radio" id="q2_c" name="q2" value="JavaScript">
+        <label for="q2_c">JavaScript</label><br><br>
+        <h3>3. Select all the programming languages you know:</h3>
+        <input type="checkbox" id="q3_a" name="q3[]" value="C++">
+        <label for="q3_a">C++</label><br>
+        <input type="checkbox" id="q3_b" name="q3[]" value="JavaScript">
+        <label for="q3_b">JavaScript</label><br>
+        <input type="checkbox" id="q3_c" name="q3[]" value="Ruby">
+        <label for="q3_c">Ruby</label><br><br>
+        <label for="timer">Time Remaining: 70:00</label><br><br>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
